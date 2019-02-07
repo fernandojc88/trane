@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Train Scheduler</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Train Schedule</h1>
+       
+      </div>
+      <!-- current trains display table -->
+      <div class="panel panel-default">
+        <div class="panel-heading">Current Train Schedule</div>
+        <div class="panel-body">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Train Name</th>
+                <th>Destination</th>
+                <th>Frequency (min.)</th>s
+                <th>Next Arrival</th>
+                <th>Minutes Away</th>
+              </tr>
+            </thead>
+            <tbody id="current-trains">
+              <tr>
+                <td>p trane</td>
+                <td>austin</td>
+                <td>Annual</td>
+                <td>1 September 11:00am</td>
+                <td id="Time"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- add new train form -->
+      <div class="panel panel-default">
+        <div class="panel-heading">Admin - Add New Train</div>
+        <div class="panel-body">
+          <form>
+            <div class="form-group col-md-6">
+              <label for="nameInput">Train Name</label>
+              <input type="text" class="form-control" id="nameInput">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="destinationInput">Destination</label>
+              <input type="text" class="form-control" id="destinationInput">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="freqInput">Frequency (min.)</label>
+              <input type="number" class="form-control" id="freqInput">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="startInput">Line Start Time</label>
+              <input type="time" class="form-control" id="startInput">
+            </div>
+            <button type="submit" class="btn btn-default" id="submit-train">Submit</button>
+          </form>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.18.1/moment.min.js"></script>
+    <script type="text/javascript" src="asset/java/java.js"></script>
+  </body>
+</html>
